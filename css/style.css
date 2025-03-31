@@ -1,0 +1,553 @@
+@font-face {
+    font-family: 'PACE';
+    src: url('../fonts/pace-racing-car/PACE.woff2') format('woff2'),
+        url('../fonts/pace-racing-car/PACE.woff') format('woff'),
+        url('../fonts/pace-racing-car/PACE.ttf') format('truetype'),
+        url('../fonts/pace-racing-car/PACE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PACE Italic';
+    src: url('../fonts/pace-racing-car/PACE-Italic.woff2') format('woff2'),
+        url('../fonts/pace-racing-car/PACE-Italic.woff') format('woff'),
+        url('../fonts/pace-racing-car/PACE-Italic.ttf') format('truetype'),
+        url('../fonts/pace-racing-car/PACE-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofast';
+    src: url('../fonts/sofast-racing-car/Sofast.woff2') format('woff2'),
+        url('../fonts/sofast-racing-car/Sofast.woff') format('woff'),
+        url('../fonts/sofast-racing-car/Sofast.ttf') format('truetype'),
+        url('../fonts/sofast-racing-car/Sofast.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofast Italic';
+    src: url('../fonts/sofast-racing-car/Sofast-Italic.woff2') format('woff2'),
+        url('../fonts/sofast-racing-car/Sofast-Italic.woff') format('woff'),
+        url('../fonts/sofast-racing-car/Sofast-Italic.ttf') format('truetype'),
+        url('../fonts/sofast-racing-car/Sofast-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+:root {
+    --fontNoCorpo: "Sofast";
+    --titulos: "PACE";
+    --corDoTexto: #4B4B4B;
+    --corDeFundo: #101010;
+    --titulos-color: #fff;
+    --border-color: #fff;
+    --white-color: #fff;
+    --black-color: #000000;
+    --primary-color: #FFFF00;
+}
+
+
+
+html,
+body {
+    color: var(--corDoCorpo);
+    background-color: var(--corDeFundo);
+    font-family: var(--fontNoCorpo);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6em;
+    overflow-x: hidden;
+    scroll-behavior: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--titulos-color);
+    font-family: var(--titulos);
+    padding: 0px;
+    margin: 0px;
+    font-weight: 700;
+    line-height: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 62px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    font-family: "PACE";
+}
+
+.btn {
+    font-family: "PACE";
+    color: white;
+    background-color: #ffb400;
+}
+
+button {
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+
+
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    main {
+        width: 100%;
+        height: 100%;
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            /* #region login  */
+
+
+            figure {
+                width: 80%;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 70%;
+                    height: auto;
+                }
+            }
+
+            h3 {
+                color: #ffb400;
+                margin-block: 6%;
+            }
+
+
+            .login-box {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 350px;
+
+                label {
+                    font-weight: bold;
+                    font-style: italic;
+                }
+
+
+                .forgot-password {
+                    font-size: 12px;
+                    text-align: right;
+                    display: block;
+                }
+
+                .btn-custom {
+                    background-color: #ffb400;
+                    color: white;
+                    font-style: italic;
+                    font-weight: bold;
+                    border: none;
+                }
+
+
+            }
+
+            /* #endregion  */
+
+
+            /* #region home  */
+
+            .sidebar {
+                width: 100%;
+                max-width: 350px;
+                background-color: #111;
+                padding: 20px;
+                min-height: 100vh;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-style: italic;
+                flex-direction: column;
+            }
+
+            .welcome-text {
+                color: #ffeb00;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                width: 100%;
+
+            }
+
+            .user-name {
+                font-size: 16px;
+                margin-bottom: 20px;
+                color: white;
+            }
+
+            .btn-custom {
+                background-color: #ffb400;
+                color: white;
+                font-weight: bold;
+                border: none;
+                width: 100%;
+                margin-bottom: 10px;
+                font-style: italic;
+            }
+
+            .btn-custom:hover {
+                background-color: #e09c00;
+            }
+
+            .btn-exit {
+                background-color: red;
+                color: white;
+            }
+
+            .btn-exit:hover {
+                background-color: darkred;
+            }
+
+
+
+            /* #endregion */
+
+            /* #region agendamento  */
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .box-form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                color: #000;
+            }
+
+            .form-control {
+                margin-bottom: 10px;
+            }
+
+            .btn-custom {
+                background-color: #ffb400;
+                color: black;
+                font-weight: bold;
+                border: none;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 5px;
+                display: block;
+                text-decoration: none;
+            }
+
+            .btn-custom:hover {
+                background-color: #e09c00;
+            }
+
+            .btn-green {
+                background-color: green;
+                color: white;
+            }
+
+            .btn-green:hover {
+                background-color: darkgreen;
+            }
+
+            .btn-back {
+                background-color: #ffb400;
+                color: black;
+            }
+
+            .btn-back:hover {
+                background-color: #e09c00;
+            }
+
+
+            /* #endregion  */
+
+            /* #region listar agendamento  */
+
+            .agendamentos-container {
+                background-color: #4b4b4bb9;
+                border-radius: 12px;
+                padding: 1%;
+                height: 80%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+                font-family: sans-serif;
+
+                h3 {
+                    font-size: 1.6em;
+                }
+
+                .card-agendamento {
+                    background-color: #4B4B4B;
+                    border-radius: 12px;
+                    width: 90%;
+                    padding: 2%;
+                    margin: 1%;
+                    height: 28%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: start;
+                    flex-direction: column;
+
+
+                    span {
+                        font-weight: bolder;
+                        color: white;
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        color: #ffffffbd;
+                    }
+
+
+                }
+
+
+
+
+            }
+
+            .status {
+                margin-left: 5%;
+                letter-spacing: 2px;
+                font-family: "PACE";
+            }
+
+
+            /* #endregion */
+
+
+            /* #region Servico  */
+            .servicos-container {
+                background-color: #4b4b4bb9;
+                border-radius: 12px;
+                padding: 1%;
+                height: 80%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+                font-family: sans-serif;
+
+                h3 {
+                    font-size: 1.6em;
+                }
+
+                .card-servico {
+                    background-color: #4B4B4B;
+                    border-radius: 12px;
+                    width: 90%;
+                    padding: 2%;
+                    margin: 1%;
+                    height: 60%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: start;
+                    flex-direction: column;
+
+
+                    span {
+                        font-weight: bolder;
+                        color: white;
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        color: #ffffffbd;
+                    }
+
+
+                }
+
+
+
+
+            }
+
+
+
+            /* #endregion */
+
+
+            /* #region depoimentos  */
+
+            .depoimento-container {
+                background-color: white;
+                width: 80%;
+                height: 50%;
+                border-radius: 12px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+
+                h6,
+                a {
+                    color: #000;
+                }
+
+                textarea {
+                    width: 90%;
+                    height: 30%;
+                    border: 1px solid #bab2b2;
+                    border-radius: 12px;
+                }
+
+                a {
+                    width: 70%;
+                    text-align: center;
+                    font-size: 1em;
+                }
+
+            }
+
+            .stars {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .star {
+               font-size: 1.5em;
+                color: gray;
+            }
+
+            .star.selected {
+                color: gold;
+            }
+
+
+            /* #endregion */
+
+
+/* #region perfil  */
+
+.profile-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+    margin-block: 2%;
+}
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.btn-custom {
+    background-color: #ffb400;
+    color: black;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+}
+.btn-custom:hover {
+    background-color: #e09c00;
+}
+
+
+/* #endregion */
+
+        }
+
+
+    }
+
+
+}
