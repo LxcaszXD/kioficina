@@ -1,14 +1,10 @@
-<?php require_once('../../config/config.php');
-$titulo = 'Home - Ki-Oficina'
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php 
+
+<?php
 require_once('template/head.php');
 ?>
-
 <body>
     <main>
         <div class="container">
@@ -38,7 +34,7 @@ require_once('template/head.php');
 
 
             </div>
-            <a href="../../app/views/agendamento.php" class="btn btn-back">VOLTAR</a>
+            <a href="<?php echo BASE_URL; ?>index.php?url=agendamento" class="btn btn-back">VOLTAR</a>
         </div>
     </main>
 

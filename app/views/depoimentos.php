@@ -1,16 +1,11 @@
-<?php require_once('../../config/config.php');
-$titulo = 'Depoimento - Ki-Oficina'
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php 
+<?php
 require_once('template/head.php');
 ?>
-
 <body>
- <main>
+<main>
     <div class="container">
 
         <h2>DEIXE SEU DEPOIMENTO</h2>
@@ -30,9 +25,9 @@ require_once('template/head.php');
             
             <a href="" class="btn">ENVIAR DEPOIMENTO</a>
         </div>
-        <a href="../views/home.php" class="btn btn-back">VOLTAR</a>
+        <a href="<?php echo BASE_URL; ?>index.php?url=menu" class="btn btn-back">VOLTAR</a>
     </div>
- </main>
+</main>
 
 
     <script src="script/script.js"></script>

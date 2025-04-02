@@ -1,11 +1,8 @@
-<?php require_once('../../config/config.php');
-$titulo = 'Serviços - Ki-Oficina'
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php 
+
+<?php
 require_once('template/head.php');
 ?>
 
@@ -27,7 +24,7 @@ require_once('template/head.php');
                     <P><span>Total:</span>R$1.800,90</P>
                     <p class="status" style="color: red;">Status:Cancelado</p>
                 </div>
-                <a href="../views/home.php" class="btn btn-back">VOLTAR</a>
+                <a href="<?php echo BASE_URL; ?>index.php?url=menu" class="btn btn-back">VOLTAR</a>
             </div>
 
 

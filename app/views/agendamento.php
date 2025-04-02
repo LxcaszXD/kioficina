@@ -1,11 +1,8 @@
-<?php require_once('../../config/config.php');
-$titulo = 'Agendamento - Ki-Oficina'
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php 
+
+<?php
 require_once('template/head.php');
 ?>
 
@@ -29,8 +26,8 @@ require_once('template/head.php');
 
                 <a href="listaAgendamentos.html"><button class="btn btn-custom">AGENDAR</button></a>
             </div>
-            <a href="../views/home.php" class="btn btn-back">VOLTAR</a>
-            <a href="../views/listaAgendamentos.php" class="btn btn-green">LISTAR AGENDA</a>
+            <a href="<?php echo BASE_URL; ?>index.php?url=menu" class="btn btn-back">VOLTAR</a>
+            <a href="<?php echo BASE_URL; ?>index.php?url=listarAgendamentos" class="btn btn-green">LISTAR AGENDA</a>
 
 
         </div>

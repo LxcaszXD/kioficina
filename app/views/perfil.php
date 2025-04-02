@@ -1,16 +1,12 @@
-<?php require_once('../../config/config.php');
-$titulo = 'Perfil - Ki-Oficina'
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php 
+<?php
 require_once('template/head.php');
 ?>
 
 <body>
- <main>
+<main>
     <div class="container">
 
         <h2 class="text-warning">MEU PERFIL</h2>
@@ -47,10 +43,10 @@ require_once('template/head.php');
             
             <button class="btn btn-custom">SALVAR ALTERAÇÕES</button>
         </div>
-        <a href="../views/home.php" class="btn btn-custom">VOLTAR</a>
+        <a href="<?php echo BASE_URL; ?>index.php?url=menu" class="btn btn-custom">VOLTAR</a>
         
     </div>
- </main>
+</main>
 
 
     <script src="script/script.js"></script>
