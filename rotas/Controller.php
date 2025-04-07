@@ -3,7 +3,7 @@
 class Controller{
 
     //Função para carregar a view
-    public function carrgarViews($views, $dados = array()){
+    public function carregarViews($views, $dados = array()){
 
         extract($dados);
         

@@ -6,7 +6,7 @@ class PerfilController extends Controller{
         $dados = array();
         $dados ['titulo'] = 'KiOficina - Perfil';
 
-        $this->carrgarViews('perfil', $dados);
+        $this->carregarViews('perfil', $dados);
 
     }
 }

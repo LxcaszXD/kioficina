@@ -6,7 +6,7 @@ class AgendamentoController extends Controller{
         $dados = array();
         $dados ['titulo'] = 'KiOficina - Agendamento';
 
-        $this->carrgarViews('agendamento', $dados);
+        $this->carregarViews('agendamento', $dados);
 
     }
 }

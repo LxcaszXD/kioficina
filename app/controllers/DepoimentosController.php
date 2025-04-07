@@ -6,7 +6,7 @@ class DepoimentosController extends Controller{
         $dados = array();
         $dados ['titulo'] = 'KiOficina - Depoimentos';
 
-        $this->carrgarViews('depoimentos', $dados);
+        $this->carregarViews('depoimentos', $dados);
 
     }
 }

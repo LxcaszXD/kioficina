@@ -12,14 +12,14 @@ require_once('template/head.php');
             <figure><img src="assets/img/logo-kioficina.png" alt=""></figure>
             <h3>LOGIN</h3>
             <div class="login-box">
-                <form action="<?php echo BASE_URL; ?>index.php?url=menu" method="POST">
+                <form action="<?php echo BASE_URL; ?>index.php?url=login/autenticar" method="POST">
                     <div class="mb-3 text-start">
                         <label for="email" class="form-label">E-MAIL</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="mb-3 text-start">
-                        <label for="password" class="form-label">SENHA</label>
-                        <input type="password" class="form-control" id="password" required>
+                        <label for="senha" class="form-label">SENHA</label>
+                        <input type="password" class="form-control" id="senha" name="senha" required>
                         <a href="#" class="forgot-password">Esqueci a senha</a>
                     </div>
                     <button type="submit" class="btn btn-custom w-100">ENTRAR</button>
