@@ -4,22 +4,40 @@ if(session_status() == PHP_SESSION_NONE){
     session_start();
 }
 
-// Definir uma URL BASE
-define('BASE_URL','http://localhost/kioficinaMobile/public/');
+//Definir URL base da aplicação
+//define("BASE_URL","https://kioficina.smpsistema.com.br/");
+define("BASE_URL","http://localhost/kioficina/public/");
 
-// Definir uma API Base
-define('BASE_API', 'https://360criativo.com.br/api/');
+// Configuração do Data Base
+define("DB_HOST", "smpsistema.com.br");
+define("DB_NAME", "u283879542_lucas");
+define("DB_USER", "u283879542_lucas");
+define("DB_PASS", "Lucas@tipi02");
 
-// Sistema para carregamento automático das classes geradas
-spl_autoload_register(function ($class){
+// Configuração do Email
+define('EMAIL_HOST', 'smtp.hostinger.com');
+define('EMAIL_PORT', '465');
+define('EMAIL_USER', 'innovaclicktipi02@smpsistema.com.br');
+define('EMAIL_PASS', 'Senac@tipi02');
 
-    if(file_exists('../app/controllers/'.$class.'.php')){
-        require_once '../app/controllers/'.$class.'.php';
+
+// Sistema de autoload das class
+spl_autoload_register(function ($classe){
+
+    if(file_exists('../app/controllers/' . $classe .'.php')){
+                  //../app/controllers/HomeController.php
+        require_once '../app/controllers/'. $classe .'.php';
     }
-    
-    if(file_exists('../rotas/'.$class.'.php')){
-        require_once '../rotas/'.$class.'.php';
+
+    if(file_exists('../app/models/'. $classe .'.php')){
+        require_once '../app/models/'. $classe .'.php';
     }
-    
+
+    if(file_exists('../core/'. $classe .'.php')){
+        require_once '../core/'. $classe .'.php';
+        //var_dump($classe);
+    }
 
 });
+
+

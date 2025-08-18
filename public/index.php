@@ -1,5 +1,15 @@
 <?php
+
+// Carregar as configurações iniciais
 require_once('../config/config.php');
 
-$caminho = new Rotas();
-$caminho->executar();
+
+// Núcleo da Aplicação
+$nucleo = new Core();
+$nucleo->executar();
+
+
+
+?>
+
+
